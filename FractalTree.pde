@@ -1,7 +1,7 @@
 private double fractionLength = .8; 
 private int smallestBranch = 10; 
 private double branchAngle = .2;  
-
+private boolean keyGPressed = false;
 
 public void setup() 
 {   
@@ -9,13 +9,10 @@ public void setup()
 	noLoop(); 
 } 
 
-public void keyPressed() {
-	
-}
 public void draw() 
 {   
 	background(0);
-	strokeWeight(2);
+	strokeWeight(1);
 	stroke(77, 158, 58);   
 	line(320,480,320,380);
 	drawBranches(320, 380, 100, 3*Math.PI/2);
